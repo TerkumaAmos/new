@@ -35,7 +35,7 @@ class DicePage extends StatelessWidget {
             //flex: 1,
             child: TextButton(
                 onPressed: () {
-                  print("Right button got pressed");
+                  print(" button got pressed");
                 },
             child: Image.asset("images/dice1.jpeg")),
           ),

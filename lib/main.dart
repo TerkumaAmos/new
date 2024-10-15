@@ -27,8 +27,8 @@ class DicePage extends StatelessWidget {
             //flex:2,
             child: Padding(
               padding:const EdgeInsets.all(16),
-              child: OutlinedButton(
-                onPressed: () {  },
+              child: TextButton(
+                onPressed: () { },
                 child: Image.asset("images/dice1.jpeg"),),
 
                         ),

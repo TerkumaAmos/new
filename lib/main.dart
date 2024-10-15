@@ -26,18 +26,18 @@ class DicePage extends StatelessWidget {
           Expanded(
             //flex:2,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                print("left Button got pressed");
+              },
               child: Image.asset("images/dice1.jpeg"),),
             ),
-            
-          
           Expanded(
             //flex: 1,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Image.asset("images/dice1.jpeg"),
-
-            ),
+            child: TextButton(
+                onPressed: () {
+                  print("Right button got pressed");
+                },
+            child: Image.asset("images/dice1.jpeg")),
           ),
         ],
       ),

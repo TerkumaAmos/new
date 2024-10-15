@@ -29,7 +29,7 @@ class DicePage extends StatelessWidget {
               onPressed: () {
                 print("left Button got pressed");
               },
-              child: Image.asset("images/dice1.jpeg"),),
+              child: Image.asset("images/dice2.png"),),
             ),
           Expanded(
             //flex: 1,

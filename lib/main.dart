@@ -55,7 +55,7 @@ class _DicePageState extends State<DicePage> {
             //flex: 1,
             child: TextButton(
                 onPressed: () {
-
+              changeDiceFace();
 
                 },
                 child: Image.asset("images/dice$rightDiceNumber.jpeg")),

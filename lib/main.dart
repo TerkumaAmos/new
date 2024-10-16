@@ -27,10 +27,6 @@ class DicePage extends StatefulWidget {
 class _DicePageState extends State<DicePage> {
   int leftDiceNumber =1;
 
-
-
-  DicePage ({super.key});
-
   @override
   Widget build(BuildContext context) {
 
@@ -41,7 +37,7 @@ class _DicePageState extends State<DicePage> {
             //flex:2,
             child: TextButton(
               onPressed: () {
-                print("left Button got pressed");
+                leftDiceNumber=5;
               },
               child: Image.asset("images/dice$leftDiceNumber.jpeg"),),
           ),

@@ -51,7 +51,7 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
                 onPressed: () {
                   setState(() {
-                    rightDiceNumber=Random().nextInt(6);
+                    rightDiceNumber=Random().nextInt(6)+1;
                   });
 
                 },

@@ -29,6 +29,10 @@ class _DicePageState extends State<DicePage> {
   int leftDiceNumber =1;
   int rightDiceNumber =3;
 
+  void changeDiceFace(){
+
+  }
+
   @override
   Widget build(BuildContext context) {
 

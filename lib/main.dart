@@ -16,6 +16,7 @@ void main() {
   );
 }
 class DicePage extends StatelessWidget {
+  int leftDiceNumber =1;
 
 
 
@@ -23,8 +24,8 @@ class DicePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    var leftDiceNumber =1;
+leftDiceNumber =4;
+leftDiceNumber =6;
     return Center(
       child: Row(
         children:<Widget> [

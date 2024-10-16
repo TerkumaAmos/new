@@ -31,6 +31,10 @@ class _DicePageState extends State<DicePage> {
 
   void changeDiceFace(){
 
+    setState(() {
+      leftDiceNumber=Random().nextInt(6)+1;
+      rightDiceNumber=Random().nextInt(6)+1;
+    });
   }
 
   @override
@@ -43,10 +47,7 @@ class _DicePageState extends State<DicePage> {
             //flex:2,
             child: TextButton(
               onPressed: () {
-                setState(() {
-                  leftDiceNumber=Random().nextInt(6)+1;
-                  rightDiceNumber=Random().nextInt(6)+1;
-                });
+                changeDiceFace();
               },
               child: Image.asset("images/dice$leftDiceNumber.jpeg"),),
           ),

@@ -1,68 +1,41 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 
-
 void main() {
-  return runApp(
-      MaterialApp(
-        home: Scaffold(
-          backgroundColor: Colors.teal.shade200,
-          appBar: AppBar(
-            title: Text("Dices"),
-            backgroundColor: Colors.blue,
-          ),
-          body: DicePage(),
-        ),
-      )
-  );
+  runApp(MaterialApp(
+    title: "Flutter Demo",
+    theme: ThemeData(
+      primarySwatch: Colors.blue,
+    ),
+    debugShowCheckedModeBanner: false,
+    home: const HomePage(),
+  ));
 }
 
-
-class DicePage extends StatefulWidget {
-  const DicePage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<DicePage> createState() => _DicePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _DicePageState extends State<DicePage> {
-  int leftDiceNumber =4;
-  int rightDiceNumber =3;
-
-  void changeDiceFace(){
-
-    setState(() {
-      leftDiceNumber=Random().nextInt(6)+1;
-      rightDiceNumber=Random().nextInt(6)+1;
-    });
-  }
-
+class _HomePageState extends State<HomePage> {
+  String title = 'Tap the screen';
   @override
   Widget build(BuildContext context) {
-
-    return Center(
-      child: Row(
-        children:<Widget> [
-          Expanded(
-            //flex:2,
-            child: TextButton(
-              onPressed: () {
-                changeDiceFace();
-              },
-              child: Image.asset("images/dice$leftDiceNumber.jpeg"),),
-          ),
-          Expanded(
-            //flex: 1,
-            child: TextButton(
-                onPressed: () {
-              changeDiceFace();
-
-                },
-                child: Image.asset("images/dice$rightDiceNumber.jpeg")),
-          ),
-        ],
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: GestureDetector(
+        onTap: () {
+          setState(() {
+            title = DateTime.now().toIso8601String();
+          });
+        },
+        child: Container(
+          color: Colors.white,
+        ),
       ),
     );
   }
 }
-

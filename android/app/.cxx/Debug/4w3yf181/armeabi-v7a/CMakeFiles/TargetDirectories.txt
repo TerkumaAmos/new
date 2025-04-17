@@ -1,0 +1,2 @@
+/Users/user/Desktop/T.E.C.H_uma/my_second_app/android/app/.cxx/Debug/4w3yf181/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/user/Desktop/T.E.C.H_uma/my_second_app/android/app/.cxx/Debug/4w3yf181/armeabi-v7a/CMakeFiles/rebuild_cache.dir
